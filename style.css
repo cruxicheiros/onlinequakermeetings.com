@@ -96,4 +96,8 @@ p {
     #content-container {
         padding: 1em;
     }
+
+    .directory table th {
+        width: 10em;
+    }
 }
