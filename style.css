@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans', 'Bitsream Vera Sans', 'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
+    background-color: #397ce2;
+    font-size: 16px;
+}
+
+#content-container {
+    max-width: 45em;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    line-height: 1.6em;
+
+    padding: 2em;
+}
+
+
+h1 {
+    margin: 0;
+    line-height: 1em;
+    font-size: 2.3em;
+}
+
+h2 {
+    margin-top: 1.6em;
+    margin-bottom: 0.3em;
+    font-size: 1.9em;
+}
+
+h3 {
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+    font-size: 1.6em;
+    border-bottom: 10px rgb(176, 209, 205) solid;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 1.2em;
+}
+
+.directory ul{ 
+    list-style-type: none;
+    list-style-position: outside;
+
+    padding: 0;
+}
+
+.directory ul li { 
+    list-style-type: none;
+    list-style-position: outside;
+
+    padding-bottom: 1.6em;
+}
+
+.directory table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.directory table th, td {
+    border-bottom: 1px #ccc solid;
+    padding: 0.3em 0;
+}
+
+.directory table th {
+    width: 15em;
+}
+
+.directory table caption {
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.9em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    #content-container {
+        padding: 1em;
+    }
+}
