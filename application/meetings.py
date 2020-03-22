@@ -5,10 +5,6 @@ class Meeting:
         self.name = name
         self.metadata = kwargs
 
-        print(kwargs)
-
-
-
 class MeetingCollection:
     def __init__(self, meetings=None):
         if meetings == None:

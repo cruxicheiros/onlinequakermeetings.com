@@ -1,12 +1,12 @@
-NAME,LINK,WORSHIP_FORMAT,MEDIUM,MEDIUM_FORMAT,TIME_ZONE,COUNTRY,STATE_PROVINCE,CITY_TOWN,LANGUAGE,IS_LIVE,FOR_LOCALS
-Ben Lomond Quaker Center,http://www.quakercenter.org/meeting-for-worship/,unprogrammed,chatzy,text chat,PST,US,California,Ben Lomond,English,1,0
-Cloud Quakers,https://www.facebook.com/Cloud-Quakers-592173357909712,unprogrammed,zoom,video chat,MT,US,,,English,1,0
-Deep River Friends Meeting,https://www.deepriverfriends.com/sermons-2/,programmed,podcast,audio podcast,,US,North Carolina,High Point,English,0,0
-Fresh Pond Monthly Meeting,http://freshpondquakers.org/how-to-log-into-our-virtual-zoom-meeting-for-worship/,unprogrammed,zoom,video chat,EST,US,Massachusetts,Cambridge,English,1,0
-Pacific Yearly Meeting,https://www.pacificyearlymeeting.org/2018/2018-events/invitation-to-a-weekly-online-worship/,unprogrammed,zoom,video chat,PST,US,California,San Rafael,English,1,0
-Pendle Hill,https://pendlehill.org/explore/worship/join-us-online-for-worship-in-the-barn/,unprogrammed,zoom,video chat,EST,US,Pennsylvania,Wallingford,English,1,0
-Quaker Universalist Fellowship,https://universalistfriends.org/about/global-meeting-for-worship-gmfw,unprogrammed,zoom,video chat,GMT,US,,,English,0,0
-Silverton Friends Church,https://silvertonfriends.podomatic.com/,programmed,podcast,audio podcast,,US,Oregon,Silverton,English,0,0
-West Hill Friends Church,https://soundcloud.com/westhillsfriends,programmed,podcast,audio podcast,,US,Oregon,Portland,English,0,0
-Woodbrooke Quaker Center,https://www.woodbrooke.org.GB/about/online-mfw/,unprogrammed,"zoom,adobe connect",video chat,GMT,GB,,Birmingham,English,1,0
-Australia Yearly Meeting,https://www.quakersaustralia.info/online-meeting-worship,unprogrammed,zoom,video chat,AET,AU,,,English,1,0
+NAME,LINK,WORSHIP_FORMAT,MEDIUM,MEDIUM_FORMAT,TIME_ZONE,COUNTRY,STATE_PROVINCE,CITY_TOWN,LANGUAGE,IS_LIVE,LOCALS_FOCUSED
+Ben Lomond Quaker Center,http://www.quakercenter.org/meeting-for-worship/,Unprogrammed,Chatzy,Text Chat,PST,US,California,Ben Lomond,English,1,0
+Cloud Quakers,https://www.facebook.com/Cloud-Quakers-592173357909712,Unprogrammed,Zoom,Video Chat,MT,US,,,English,1,0
+Deep River Friends Meeting,https://www.deepriverfriends.com/sermons-2/,Programmed,,Audio Podcast,,US,North Carolina,High Point,English,0,0
+Fresh Pond Monthly Meeting,http://freshpondquakers.org/how-to-log-into-our-virtual-zoom-meeting-for-worship/,Unprogrammed,Zoom,Video Chat,EST,US,Massachusetts,Cambridge,English,1,0
+Pacific Yearly Meeting,https://www.pacificyearlymeeting.org/2018/2018-events/invitation-to-a-weekly-online-worship/,Unprogrammed,Zoom,Video Chat,PST,US,California,San Rafael,English,1,0
+Pendle Hill,https://pendlehill.org/explore/worship/join-us-online-for-worship-in-the-barn/,Unprogrammed,Zoom,Video Chat,EST,US,Pennsylvania,Wallingford,English,1,0
+Quaker Universalist Fellowship,https://universalistfriends.org/about/global-meeting-for-worship-gmfw,Unprogrammed,Zoom,Video Chat,GMT,US,,,English,1,0
+Silverton Friends Church,https://silvertonfriends.podomatic.com/,Programmed,,Audio Podcast,,US,Oregon,Silverton,English,0,0
+West Hill Friends Church,https://soundcloud.com/westhillsfriends,Programmed,,Audio Podcast,,US,Oregon,Portland,English,0,0
+Woodbrooke Quaker Center,https://www.woodbrooke.org.uk/about/online-mfw/,Unprogrammed,"Zoom, Adobe Connect",Video Chat,GMT,GB,,Birmingham,English,1,0
+Australia Yearly Meeting,https://www.quakersaustralia.info/online-meeting-worship,Unprogrammed,Zoom,Video Chat,AET,AU,,,English,1,0
