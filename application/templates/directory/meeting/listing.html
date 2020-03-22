@@ -1,0 +1,5 @@
+<ul class="meetings-list">
+    {% for meeting in category.meetings.to_list() %}
+        {% include 'directory/meeting/entry.html' %}
+    {% endfor %}
+</ul>
