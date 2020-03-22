@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	<title>{% block title %}{% endblock %} - Online Quaker Meetings Directory</title>
+
+	<meta name="description" content="A directory of Quaker Meetings for Worship happening over the internet. Find an online MfW here!">
+	<meta name="author" content="Clark Seanor">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<meta property="og:description" content="A directory of Quaker meetings happening over the internet.">
+	<meta property="og:title" content="Online Quaker Meetings">
+</head>
+
+<body>
+	<div id="content-container">
+		<header>
+			{% block header %}{% endblock %}
+		</header>
+		
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+	
+		<footer>
+			{% block footer %}{% endblock %}
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<li>
+    <h4>{{ meeting.name }}</h4>
+    <table>
+        <caption>Meeting Information</caption>
+
+        {% if meeting.metadata['link'] %}
+        <tr>
+            <th>Link</th>
+            <td><a href="{{ meeting.metadata['link'] }}">{{ meeting.name }}'s Online Meetings</a></td>
+        </tr>
+        {% endif %}
+
+        {% if meeting.metadata['state_province'] or meeting.metadata['city_town'] %}
+        <tr>
+            <th>Physical Location</th>
+            <td>
+                {% if meeting.metadata['city_town'] %}
+                    {% if meeting.metadata['state_province'] %}
+                        {{ meeting.metadata['city_town'] }}, 
+                    {% else %}
+                        {{ meeting.metadata['city_town'] }}
+                    {% endif %}
+                {% endif %}
+
+
+                {% if meeting.metadata['state_province'] %}
+                    {{ meeting.metadata['state_province'] }}
+                {% endif %}
+            </td>
+        </tr>
+        {% endif %}
+
+        {% if meeting.metadata['worship_format'] %}
+        <tr>
+            <th>Worship Format</th>
+            <td>{{ meeting.metadata['worship_format'] }}</td>
+        </tr>
+        {% endif %}
+
+        {% if meeting.metadata['medium_format'] %}
+        <tr>
+            <th>Medium Format</th>
+            <td>
+                {% if meeting.metadata['is_live'] %}
+                    Live
+                {% endif %}
+                
+                {{ meeting.metadata['medium_format'] }}
+            </td>
+        </tr>
+        {% endif %}
+
+        {% if meeting.metadata['medium'] %}
+        <tr>
+            <th>Software Used</th>
+            <td>{{ meeting.metadata['medium'] }}</td>
+        </tr>
+        {% endif %}
+
+    </table>
+</li>

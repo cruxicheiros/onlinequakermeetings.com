@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block header %}
+	<h1>Online Quaker Meetings Directory</h1>
+{% endblock %}
+
+{% block main %}
+	<h2>What is this?</h2>
+	<p>
+		Because of the current pandemic, many Quaker meetings have started meeting online instead of in person. This website exists to help Quakers find an online meeting to attend and spread the word about ones they may be holding.
+	</p>
+	{% include 'back_to_top.html' %}
+
+	<h2>How to use the directory</h2>
+	<p>
+		Meetings are organised alphabetically by country, then alphabetically by the name of the meeting.
+	</p>
+	{% include 'back_to_top.html' %}
+
+	{% include 'directory/directory.html' %}
+{% endblock %}
+
+{% block footer %}
+	<p>
+		This website is under active development. So far, only a few meetings are listed: this is not because this is an exhaustive list of all meetings that are occuring online!
+	</p>
+	<p>
+		For more information or to get your online meeting listed, email clarkseanor+oqmd@gmail.com - or if you're more technical go to <a href="https://github.com/cruxicheiros/onlinequakermeetings.com">the GitHub repository</a> and make an issue.
+	</p>
+	<p>
+		This page was last updated on 21 March 2020.
+	</p>
+	{% include 'back_to_top.html' %}
+{% endblock %}
+
