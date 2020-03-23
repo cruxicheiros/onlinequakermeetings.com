@@ -5,8 +5,15 @@
 
         {% if meeting.metadata['link'] %}
         <tr>
-            <th>Link</th>
+            <th>Online MfW Details</th>
             <td><a href="{{ meeting.metadata['link'] }}">{{ meeting.name }}'s Online Meetings</a></td>
+        </tr>
+        {% endif %}
+
+        {% if meeting.metadata['homepage'] %}
+        <tr>
+            <th>Meeting Homepage</th>
+            <td><a href="{{ meeting.metadata['link'] }}">{{ meeting.name }}'s Homepage</a></td>
         </tr>
         {% endif %}
 
@@ -39,7 +46,7 @@
 
         {% if meeting.metadata['medium_format'] %}
         <tr>
-            <th>Medium Format</th>
+            <th>Medium</th>
             <td>
                 {% if meeting.metadata['is_live'] %}
                     Live
