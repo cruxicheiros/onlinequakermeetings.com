@@ -23,6 +23,7 @@ class MeetingCollection:
                     state_province=row['STATE_PROVINCE'],
                     city_town=row['CITY_TOWN'],
                     link=row['LINK'],
+                    homepage=row['HOMEPAGE'],
                     worship_format=row['WORSHIP_FORMAT'],
                     medium=row['MEDIUM'],
                     medium_format=row['MEDIUM_FORMAT'].strip('"'),
