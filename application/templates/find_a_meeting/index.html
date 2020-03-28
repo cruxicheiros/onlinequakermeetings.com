@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Find A Meeting{% endblock %}
+
+{% block header %}
+    <h1>Find an Online Meeting</h1>
+    <nav>
+        {% include 'go_back_home.html' %}
+    </nav>
+{% endblock %}
+
+{% block main %}
+    <h2>Meeting house websites</h2>
+    <p>
+        If you already attend a Quaker meeting, a good way to find out if it holds online meetings is to go on your meeting's website. Many meetings have up-to-date websites and will list information about how to join them online there.
+    </p>
+
+    <h2>Social media</h2>
+    <p>
+        Many meetings keep members up to date using <a href="https://www.facebook.com">Facebook</a>. If you're struggling to find an up-to-date website for your meeting and have a Facebook account, try searching for the name of your meeting on Twitter and seeing if anything comes up, or checking any related Facebook groups you're already a part of.
+    </p>
+
+    <h2>Country-specific resources</h2>
+        <p>
+            Some countries have resources that act as directories of Quaker meetings in their country. These country-specific pages contain links to those.
+        </p>
+        <div class="directory">
+            <ul class="country-list">
+                {% for country in countries %}
+                    <li>
+                        <a href="/findmeetings/{{ country.code }}">{{ country.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </p>
+    
+{% endblock %}
+
+{% block footer %}
+    <p>
+		This page was last updated on 28 March 2020.
+	</p>
+	{% include 'back_to_top.html' %}
+{% endblock %}
+
