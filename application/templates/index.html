@@ -13,14 +13,14 @@
 	</p>
 
 	<h2>Resources</h2>
-	<h3><a href="{{ url_for('find_your_meeting') }} ">Find My Online Meeting</a></h3>
+	<h3>Find My Online Meeting</h3>
 	<p>
-		Advice and useful links for finding an online meeting to attend.
+		<a href="{{ url_for('find_your_meeting') }}">Advice and useful links for finding an online meeting to attend.</a>
 	</p>
 
-	<h3><a href="{{ url_for('directory') }}">Directory</a></h3>
+	<h3>Directory</h3>
 	<p>
-		A partial directory of Quaker meetings with online attendance.
+		<a href="{{ url_for('directory') }}">A partial directory of Quaker meetings with online attendance.</a>
 	</p>
 
 	{% include 'back_to_top.html' %} 
