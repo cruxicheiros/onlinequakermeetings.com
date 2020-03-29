@@ -37,7 +37,7 @@ def create_app(test_config=None):
         return render_template("index.html")
 
     # Directory page
-    @app.route('/directory')
+    @app.route('/directory/')
     def directory():
         meetings_by_country = meeting_collection.split_by_country()
         categories = CategoryCollection()
@@ -56,11 +56,11 @@ def create_app(test_config=None):
     specific_info_countries = [countries.get(code) for code in specific_info_country_codes]
 
     # 'how to find your meeting' page
-    @app.route('/findmeetings')
+    @app.route('/findmeetings/')
     def find_your_meeting():
         return render_template("find_a_meeting/index.html", countries=specific_info_countries)
 
-    @app.route('/findmeetings/<country_code>')
+    @app.route('/findmeetings/<country_code>/')
     def find_meeting_country_info(country_code):
         if country_code in specific_info_country_codes:
             country = countries.get(country_code)
