@@ -9,8 +9,11 @@ body {
     margin: 0 auto;
     background-color: #f7f7f7;
     line-height: 1.6em;
-
     padding: 2em;
+}
+
+footer {
+    padding-top: 2em;
 }
 
 h1 {
@@ -20,7 +23,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 1.6em;
+    margin-top: 0.9em;
     margin-bottom: 0.3em;
     font-size: 1.9em;
 }
@@ -43,18 +46,45 @@ p {
     padding-bottom: 1.2em;
 }
 
-.directory ul{ 
+nav {
+    padding-top: 0.3em;
+    border-bottom: 3px rgb(179, 179, 179) solid;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+    padding-right: 1em;
+}
+
+.directory .country-list li {
+    padding-bottom: 0.3em;
+    list-style-type: square;
+}
+
+.directory .category-list { 
     list-style-type: none;
     list-style-position: outside;
 
     padding: 0;
 }
 
-.directory ul li { 
+.directory .category-list ul { 
     list-style-type: none;
     list-style-position: outside;
 
+    padding: 0;
+}
+
+.directory .category-list li {
     padding-bottom: 1.6em;
+    list-style-type: none;
+    list-style-position: outside;
 }
 
 .directory table {
