@@ -3,45 +3,38 @@
 {% block title %}Homepage{% endblock %}
 
 {% block header %}
-	<h1>Online Quaker Meetings Directory</h1>
+	<h1>Online Quaker Meetings</h1>
 {% endblock %}
 
 {% block main %}	
 	<h2>What is this?</h2>
 	<p>
-		A listing of online Quaker meetings to help Quakers find online meetings to attend and spread the word about ones they may be holding.
+		A resource to help Quakers find online meetings to attend and spread the word about ones they may be holding.
 	</p>
-	{% include 'jump_to_directory.html' %}
 
-	<h2>Find your meeting</h2>
+	<h2>Resources</h2>
+	<h3><a href="{{ url_for('find_your_meeting') }} ">Find My Online Meeting</a></h3>
 	<p>
-		Meetings in this directory are listed alphabetically by country, then alphabetically by their names. A good way to search this page is by pressing <strong>Ctrl+F</strong> (<strong>Command+F</strong> on an Apple computer) and entering a keyword into your browser's search box.
+		Advice and useful links for finding an online meeting to attend.
 	</p>
+
+	<h3><a href="{{ url_for('directory') }}">Directory</a></h3>
+	<p>
+		A partial directory of Quaker meetings with online attendance.
+	</p>
+
 	{% include 'back_to_top.html' %} 
-
-	<h2>My meeting isn't here</h2>
-	<p>
-		Lots of meetings that aren't listed here are hosting online meetings. If your meeting has a website, or a social media presence like a Facebook page, those places are good places to check to find an online meeting.
-	</p>
-	<p>
-		You can get your meeting added to the list or get your listing modified by emailing <a href="mailto:clarkseanor+oqmd@google.com">clarkseanor+oqmd@google.com</a>.
-	</p>
-	{% include 'back_to_top.html' %}
-
- 	<h2 id="directory-heading">Directory</h2> 
-	{% include 'directory/directory.html' %}
 {% endblock %}
 
 {% block footer %}
-	<h2>About</h2>
 	<p>
-		This website is under active development. So far, only a few meetings are listed: this is not because this is an exhaustive list of all meetings that are occuring online!
+		This website is under active development. More information will be added!
 	</p>
 	<p>
-		For more information or to get your online meeting listed, email <a href="mailto:clarkseanor+oqmd@google.com">clarkseanor+oqmd@google.com</a> - or if you're more technical go to <a href="https://github.com/cruxicheiros/onlinequakermeetings.com">the GitHub repository</a> and make an issue.
+		For more information or to get your online meeting listed in the directory, email <a href="mailto:clarkseanor+oqmd@google.com">clarkseanor+oqmd@google.com</a> - or if you're more technical go to <a href="https://github.com/cruxicheiros/onlinequakermeetings.com">the GitHub repository</a> and make an issue.
 	</p>
 	<p>
-		This page was last updated on 23 March 2020.
+		This page was last updated on 28 March 2020.
 	</p>
 	{% include 'back_to_top.html' %}
 {% endblock %}

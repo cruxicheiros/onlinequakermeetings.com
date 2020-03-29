@@ -1,11 +1,26 @@
 {% extends 'find_a_meeting/country_specific/base.html' %}
 
 {% block main %}
-    <h2>Quakers In Britain listing</h2>
+    <h2>Quakers in Britain listing</h2>
     <p>
         Quakers in Britain provides a <a href="https://www.quaker.org.uk/meetings">search engine and listing</a> for meetings in the UK. You can search by postcode, by the name of a nearby city, or by the name of the meeting house you're looking for.
     </p>
     <p>
         Listings contain contact information for each meeting as well as a link to the meeting's website, if it has one.
     </p>
+
+    <h2>Woodbrooke Quaker Center</h2>
+    <p>
+        Woodbrooke Quaker Center is hosting <a href="https://www.woodbrooke.org.uk/about/online-mfw/">online meetings for worship</a> several times a week. They are open to all.
+    </p>
+{% endblock %}
+
+{% block footer %}
+    <p>
+        This website is in active development. Think something's missing? Email it to <a href="mailto:clarkseanor+oqmd@gmail.com">clarkseanor+oqmd@gmail.com</a>.
+    </p>
+	<p>
+		This page was last updated on 28 March 2020.
+	</p>
+	{% include 'back_to_top.html' %}
 {% endblock %}

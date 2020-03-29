@@ -34,6 +34,11 @@ def create_app(test_config=None):
     # the homepage
     @app.route('/')
     def index():
+        return render_template("index.html")
+
+    # Directory page
+    @app.route('/directory')
+    def directory():
         meetings_by_country = meeting_collection.split_by_country()
         categories = CategoryCollection()
 
@@ -44,7 +49,7 @@ def create_app(test_config=None):
 
         sorted_categories = categories.sort_by_name()
 
-        return render_template("index.html", categories=sorted_categories)
+        return render_template("/directory/index.html", categories=sorted_categories)
 
     # Define list of countries with specific information for finding meetings
     specific_info_country_codes = ["au", "gb", "us"]
